@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.profile-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.profile-card {
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 3px solid transparent;
+    transition: border 0.2s ease, transform 0.2s ease;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cores simulando a imagem anexada */
+.red { background-color: #e50914; }
+.yellow { background-color: #f5a623; }
+.blue { background-color: #2da0d4; }
+.grey { background-color: #808080; }
+
+.add-button {
+    background-color: transparent;
+    border: none;
+    font-size: 80px;
+    color: grey;
+}
+
+/* Efeito Hover Estilo Netflix */
+.profile-card:hover .avatar {
+    border-color: #e5e5e5;
+    transform: scale(1.05);
+}
+
+.profile-card:hover span {
+    color: #e5e5e5;
+}
+
+.profile-card span {
+    font-size: 1.3vw;
+    color: grey;
+    transition: color 0.2s;
+}
+
+.manage-button {
+    background: transparent;
+    border: 1px solid grey;
+    color: grey;
+    padding: 10px 30px;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.manage-button:hover {
+    border-color: white;
+    color: white;
+}

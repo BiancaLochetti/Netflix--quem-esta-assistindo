@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Quem está assistindo?</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Quem está assistindo?</h1>
+        
+        <div class="profile-container" id="profile-list">
+            <div class="profile-card">
+                <div class="avatar red" onclick="editProfile('Scarlett')"></div>
+                <span>Scarlett</span>
+            </div>
+            <div class="profile-card">
+                <div class="avatar yellow" onclick="editProfile('Sunny')"></div>
+                <span>Sunny</span>
+            </div>
+            <div class="profile-card">
+                <div class="avatar blue" onclick="editProfile('Robin')"></div>
+                <span>Robin</span>
+            </div>
+            <div class="profile-card">
+                <div class="avatar grey" onclick="editProfile('Dusty')"></div>
+                <span>Dusty</span>
+            </div>
+
+            <div class="profile-card" onclick="addNewProfile()">
+                <div class="avatar add-button">
+                    <span>+</span>
+                </div>
+                <span>Adicionar Perfil</span>
+            </div>
+        </div>
+
+        <button class="manage-button">Gerenciar Perfis</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
